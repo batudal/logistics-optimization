@@ -39,7 +39,8 @@ else:
     locationsX.insert(0, locations_init)
     locations = locationsX
 
-gmaps = googlemaps.Client(key='AIzaSyBFbrjZ60wcVQ3vil3BSh-dw4FjZsbC7R4')
+## ENTER GMAPS APIKEY HERE (ALLOW FEATURES SUCH AS DISTANCE MATRIX AND GEOCODE)
+gmaps = googlemaps.Client(key='')
 now = datetime.now()
 
 matrix_result = gmaps.distance_matrix(locations, locations, mode="driving", departure_time=now, region="tr")
